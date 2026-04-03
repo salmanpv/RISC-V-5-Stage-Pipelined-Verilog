@@ -15,16 +15,12 @@ VCD_FILE = pipelined_debug.vcd
 SRCS = ALU.v \
        ALU_Decoder.v \
        ALU_Mux.v \
-       Control_Unit.v \
-       Core_Datapath.v \
        Data_Memory.v \
        Extend.v \
        Instruction_Memory.v \
        Main_Decoder.v \
        PC.v \
-       PC_Mux.v \
        PC_Plus_4.v \
-       PC_Target.v \
        Register_File.v \
        Result_Mux.v \
        IF_ID_Pipeline.v \
