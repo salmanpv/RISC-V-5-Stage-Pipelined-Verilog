@@ -37,7 +37,7 @@ SRCS = ALU.v \
 all: simulate
 
 # Compile all sources into a simulation executable
-$(VVP_OUT): $(SRCS) instructions.txt
+$(VVP_OUT): $(SRCS) instructions.mem
 	$(SIM) $(SIM_FLAGS) -o $@ $(SRCS)
 
 # Run the simulation (default)
@@ -67,5 +67,3 @@ help:
 	@echo "  help       : Show this message"
 
 .PHONY: all simulate wave view clean help
-
-// End of Makefile
