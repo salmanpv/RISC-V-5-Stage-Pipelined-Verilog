@@ -4,7 +4,7 @@
 
 This 5-stage pipelined RISC-V processor is built upon and extends the **RISC-V Single Cycle Processor** by **Govardhan**.
 
-**Original Repository:** [RISCV_Single_Cycle_Processor](https://github.com/GovardhananKA/RISCV_Single_Cycle_Processor)
+**Original Repository:** [RISCV_Single_Cycle_Processor](https://github.com/govardhnn/RISCV_Single_Cycle_Processor)
 
 **License:** MIT License (Copyright (c) 2023 Govardhan)
 
