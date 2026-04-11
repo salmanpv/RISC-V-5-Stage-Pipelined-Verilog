@@ -7,37 +7,31 @@ SIM = iverilog
 SIM_FLAGS = -g2012
 VVP = vvp
 
+ifeq ($(OS),Windows_NT)
+RM = del /F /Q
+else
+RM = rm -f
+endif
+
 # Output files
 VVP_OUT = sim.vvp
 VCD_FILE = pipelined_debug.vcd
 
-# All Verilog source files for the pipelined processor
-SRCS = ALU.v \
-       ALU_Decoder.v \
-       ALU_Mux.v \
-       Data_Memory.v \
-       Extend.v \
-       Instruction_Memory.v \
-       Main_Decoder.v \
-       PC.v \
-       PC_Plus_4.v \
-       Register_File.v \
-       Result_Mux.v \
-       IF_ID_Pipeline.v \
-       ID_EX_Pipeline.v \
-       EX_MEM_Pipeline.v \
-       MEM_WB_Pipeline.v \
-       Hazard_Unit.v \
-       Forwarding_Unit.v \
-       Pipelined_Core.v \
-       Pipelined_Top.v \
-       Pipelined_TB.v
+# Project layout
+SRC_DIR = src
+TB_DIR = tb
+MEM_FILE = $(SRC_DIR)/instructions.mem
+
+# All Verilog source files for the pipelined processor and testbench
+DESIGN_SRCS = $(wildcard $(SRC_DIR)/*.v)
+TB_SRCS = $(wildcard $(TB_DIR)/*.v)
+SRCS = $(DESIGN_SRCS) $(TB_SRCS)
 
 # Default target: compile and run simulation
 all: simulate
 
 # Compile all sources into a simulation executable
-$(VVP_OUT): $(SRCS) instructions.mem
+$(VVP_OUT): $(SRCS) $(MEM_FILE)
 	$(SIM) $(SIM_FLAGS) -o $@ $(SRCS)
 
 # Run the simulation (default)
@@ -54,7 +48,7 @@ view: wave
 
 # Clean up generated files
 clean:
-	rm -f $(VVP_OUT) $(VCD_FILE) *.vcd
+	-$(RM) $(VVP_OUT) $(VCD_FILE) *.vcd
 
 # Help message
 help:

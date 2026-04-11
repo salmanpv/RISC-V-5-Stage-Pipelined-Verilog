@@ -15,8 +15,8 @@ module Instruction_Memory(
 
    initial
      begin
-    // Load instructions from repository relative path so simulation works on any machine
-    $readmemh("instructions.mem", I_MEM_BLOCK);
+    // Keep this relative to repository root where simulation is run
+    $readmemh("src/instructions.mem", I_MEM_BLOCK);
      end
 
    assign RD = I_MEM_BLOCK[A[31:2]]; // word aligned
