@@ -1,4 +1,4 @@
-# RISC-V 5-Stage Pipelined Verilog
+# RISC-V 5-Stage Pipelined CPU
 
 A 5-stage pipelined RISC-V processor written in Verilog.
 
