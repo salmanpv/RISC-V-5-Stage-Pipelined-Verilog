@@ -1,4 +1,4 @@
-module Pipelined_Top (
+﻿module Pipelined_Top (
     input  wire        clk, reset,
     output wire [31:0] WriteData, DataAddr,
     output wire        MemWrite

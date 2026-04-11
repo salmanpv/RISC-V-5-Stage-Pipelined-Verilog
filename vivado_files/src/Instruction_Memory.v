@@ -1,4 +1,4 @@
-(* keep_hierarchy = "yes" *)
+﻿(* keep_hierarchy = "yes" *)
 module Instruction_Memory(
     input [31:0] A,
     output [31:0] RD

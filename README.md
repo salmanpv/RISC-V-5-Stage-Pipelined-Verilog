@@ -1,4 +1,4 @@
-# RISC-V 5-Stage Pipelined CPU
+﻿# RISC-V 5-Stage Pipelined CPU
 
 A 5-stage pipelined RISC-V processor written in Verilog.
 
@@ -21,6 +21,31 @@ This project extends the RISC-V Single Cycle Processor by Govardhan with pipelin
 - Design files: `src/*.v`
 - Testbench files: `tb/*.v`
 - Instruction memory: `src/instructions.mem`
+
+## CPU Technical Details
+
+- ISA base: RV32I subset focused on arithmetic, load/store, branch, and immediate operations.
+- Datapath width: 32-bit data path and 32-bit instruction path.
+- Pipeline stages:
+	- IF: Program counter update and instruction fetch.
+	- ID: Instruction decode, register file read, immediate generation, and control generation.
+	- EX: ALU execution, branch decision, and forwarding selection.
+	- MEM: Data memory read/write.
+	- WB: Write-back select (ALU, memory, or PC+4) to register file.
+- Pipeline registers: `IF_ID_Pipeline`, `ID_EX_Pipeline`, `EX_MEM_Pipeline`, `MEM_WB_Pipeline` isolate stage timing.
+- Hazard handling:
+	- Data hazards are resolved using `Forwarding_Unit` (EX/MEM and MEM/WB bypass paths).
+	- Load-use hazards are handled in `Hazard_Unit` using stall and flush control.
+	- Control hazards are handled by flushing younger instructions on taken branch/jump decisions.
+- Branch/control path:
+	- Branch compare and target selection are resolved in execute path.
+	- `PC` and `PC_Plus_4` modules implement sequential and redirected fetch addresses.
+- Core functional blocks:
+	- `Main_Decoder` + `ALU_Decoder` generate control signals.
+	- `ALU_Mux` selects ALU operand source.
+	- `Result_Mux` selects write-back source.
+	- `Register_File`, `Instruction_Memory`, and `Data_Memory` implement architectural storage.
+- Simulation flow: Icarus Verilog build and testbench-driven waveform generation (`pipelined_debug.vcd`).
 
 ## Run Simulation
 

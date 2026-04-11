@@ -1,4 +1,4 @@
-module Hazard_Unit (
+﻿module Hazard_Unit (
     input  wire [4:0] Rs1D, Rs2D,
     input  wire [4:0] RdE,
     input  wire       MemReadE,

@@ -1,4 +1,4 @@
-(* keep_hierarchy = "yes" *)
+﻿(* keep_hierarchy = "yes" *)
 module Data_Memory(
 		   input wire 	      clk, WE,
 		   input wire [31:0]  A, WD,

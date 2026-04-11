@@ -1,4 +1,4 @@
-module Forwarding_Unit (
+﻿module Forwarding_Unit (
     input  wire [4:0] Rs1E, Rs2E,
     input  wire [4:0] RdM, RdW,
     input  wire       RegWriteM, RegWriteW,

@@ -1,4 +1,4 @@
-module PC (
+﻿module PC (
     input wire        clk, reset,
     input wire        StallF,
     input wire [31:0] PCNext,

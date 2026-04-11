@@ -1,4 +1,4 @@
-module ID_EX_Pipeline (
+﻿module ID_EX_Pipeline (
     input  wire        clk, reset,
     input  wire        FlushE, StallD,
     input  wire [31:0] PC_D, PCPlus4_D, ImmExt_D, RD1_D, RD2_D,

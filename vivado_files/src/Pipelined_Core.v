@@ -1,4 +1,4 @@
-module Pipelined_Core (
+﻿module Pipelined_Core (
     input  wire        clk, reset,
     input  wire [31:0] Instr,
     input  wire [31:0] ReadData,

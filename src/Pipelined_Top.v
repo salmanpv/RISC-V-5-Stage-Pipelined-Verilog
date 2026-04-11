@@ -1,6 +1,6 @@
 /*
  * RISC-V 5-Stage Pipelined Processor
- * Copyright (c) 2024 Salman
+ * Copyright (c) 2026 Salmanul Faris PV
  * Based on RISC-V Single Cycle Processor by Govardhan (2023)
  * 
  * Licensed under MIT License

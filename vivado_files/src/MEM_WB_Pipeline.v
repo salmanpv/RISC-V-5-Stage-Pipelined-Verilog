@@ -1,4 +1,4 @@
-module MEM_WB_Pipeline (
+﻿module MEM_WB_Pipeline (
     input  wire        clk, reset,
     input  wire [31:0] ALUResult_M, ReadData_M, PCPlus4_M,
     input  wire [4:0]  Rd_M,

@@ -1,4 +1,4 @@
-module IF_ID_Pipeline (
+﻿module IF_ID_Pipeline (
     input  wire        clk, reset,
     input  wire        StallD, FlushD,
     input  wire [31:0] PC_F, PCPlus4_F, Instr_F,

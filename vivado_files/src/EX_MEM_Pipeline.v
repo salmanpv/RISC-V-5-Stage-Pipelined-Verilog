@@ -1,4 +1,4 @@
-module EX_MEM_Pipeline (
+﻿module EX_MEM_Pipeline (
     input  wire        clk, reset,
     input  wire [31:0] ALUResult_E, WriteData_E, PCPlus4_E,
     input  wire [4:0]  Rd_E,
