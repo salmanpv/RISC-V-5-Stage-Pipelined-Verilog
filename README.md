@@ -6,7 +6,7 @@ This project extends the RISC-V Single Cycle Processor by Govardhan with pipelin
 
 ## Acknowledgments
 
-**Built upon:** [RISC-V Single Cycle Processor by Govardhan](https://github.com/GovardhananKA/RISCV_Single_Cycle_Processor)
+**Built upon:** [RISC-V Single Cycle Processor by Govardhan](https://github.com/govardhnn/RISCV_Single_Cycle_Processor)
 - Original Reference: "Digital Design and Computer Architecture: RISC-V Edition" by Sarah L. Harris and David Harris
 - Licensed under MIT License (See [ACKNOWLEDGMENTS.md](ACKNOWLEDGMENTS.md))
 
