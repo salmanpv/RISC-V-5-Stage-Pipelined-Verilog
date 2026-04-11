@@ -1,0 +1,27 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef" \
+"../../../../../Desktop/src/ALU.v" \
+"../../../../../Desktop/src/ALU_Decoder.v" \
+"../../../../../Desktop/src/ALU_Mux.v" \
+"../../../../../Desktop/src/Data_Memory.v" \
+"../../../../../Desktop/src/EX_MEM_Pipeline.v" \
+"../../../../../Desktop/src/Extend.v" \
+"../../../../../Desktop/src/Forwarding_Unit.v" \
+"../../../../../Desktop/src/Hazard_Unit.v" \
+"../../../../../Desktop/src/ID_EX_Pipeline.v" \
+"../../../../../Desktop/src/IF_ID_Pipeline.v" \
+"../../../../../Desktop/src/Instruction_Memory.v" \
+"../../../../../Desktop/src/MEM_WB_Pipeline.v" \
+"../../../../../Desktop/src/Main_Decoder.v" \
+"../../../../../Desktop/src/PC.v" \
+"../../../../../Desktop/src/PC_Plus_4.v" \
+"../../../../../Desktop/src/Pipelined_Core.v" \
+"../../../../../Desktop/src/Register_File.v" \
+"../../../../../Desktop/src/Result_Mux.v" \
+"../../../../../Desktop/src/Pipelined_Top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

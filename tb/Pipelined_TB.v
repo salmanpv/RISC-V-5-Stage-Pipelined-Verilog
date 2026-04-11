@@ -1,5 +1,14 @@
 `timescale 1ns / 1ps
 
+/*
+ * RISC-V 5-Stage Pipelined Processor - Testbench
+ * Copyright (c) 2024 Salman
+ * Based on RISC-V Single Cycle Processor by Govardhan (2023)
+ * 
+ * Licensed under MIT License
+ * See LICENSE file for full license text
+ */
+
 module Pipelined_TB_Debug();
 
     reg clk = 0, reset;

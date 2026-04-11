@@ -1,0 +1,24 @@
+0.7
+2020.2
+Nov 14 2025
+19:37:27
+C:/Users/salmanul.pv/Desktop/src/ALU.v,1775884707,verilog,,C:/Users/salmanul.pv/Desktop/src/ALU_Decoder.v,,ALU,,,../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/Users/salmanul.pv/Desktop/src/ALU_Decoder.v,1775884707,verilog,,C:/Users/salmanul.pv/Desktop/src/ALU_Mux.v,,ALU_Decoder,,,../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/Users/salmanul.pv/Desktop/src/ALU_Mux.v,1775884707,verilog,,C:/Users/salmanul.pv/Desktop/src/Data_Memory.v,,ALU_Mux,,,../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/Users/salmanul.pv/Desktop/src/Data_Memory.v,1775903246,verilog,,C:/Users/salmanul.pv/Desktop/src/EX_MEM_Pipeline.v,,Data_Memory,,,../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/Users/salmanul.pv/Desktop/src/EX_MEM_Pipeline.v,1775884707,verilog,,C:/Users/salmanul.pv/Desktop/src/Extend.v,,EX_MEM_Pipeline,,,../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/Users/salmanul.pv/Desktop/src/Extend.v,1775884707,verilog,,C:/Users/salmanul.pv/Desktop/src/Forwarding_Unit.v,,Extend,,,../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/Users/salmanul.pv/Desktop/src/Forwarding_Unit.v,1775884707,verilog,,C:/Users/salmanul.pv/Desktop/src/Hazard_Unit.v,,Forwarding_Unit,,,../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/Users/salmanul.pv/Desktop/src/Hazard_Unit.v,1775884707,verilog,,C:/Users/salmanul.pv/Desktop/src/ID_EX_Pipeline.v,,Hazard_Unit,,,../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/Users/salmanul.pv/Desktop/src/ID_EX_Pipeline.v,1775884707,verilog,,C:/Users/salmanul.pv/Desktop/src/IF_ID_Pipeline.v,,ID_EX_Pipeline,,,../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/Users/salmanul.pv/Desktop/src/IF_ID_Pipeline.v,1775884707,verilog,,C:/Users/salmanul.pv/Desktop/src/Instruction_Memory.v,,IF_ID_Pipeline,,,../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/Users/salmanul.pv/Desktop/src/Instruction_Memory.v,1775903065,verilog,,C:/Users/salmanul.pv/Desktop/src/MEM_WB_Pipeline.v,,Instruction_Memory,,,../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/Users/salmanul.pv/Desktop/src/MEM_WB_Pipeline.v,1775884707,verilog,,C:/Users/salmanul.pv/Desktop/src/Main_Decoder.v,,MEM_WB_Pipeline,,,../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/Users/salmanul.pv/Desktop/src/Main_Decoder.v,1775884707,verilog,,C:/Users/salmanul.pv/Desktop/src/PC.v,,Main_Decoder,,,../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/Users/salmanul.pv/Desktop/src/PC.v,1775884707,verilog,,C:/Users/salmanul.pv/Desktop/src/PC_Plus_4.v,,PC,,,../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/Users/salmanul.pv/Desktop/src/PC_Plus_4.v,1775884707,verilog,,C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v,,PC_Plus_4,,,../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v,1775884707,verilog,,C:/Users/salmanul.pv/Desktop/src/Register_File.v,,Pipelined_Core,,,../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/Users/salmanul.pv/Desktop/src/Pipelined_Top.v,1775884707,verilog,,,,Pipelined_Top,,,../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/Users/salmanul.pv/Desktop/src/Register_File.v,1775884707,verilog,,C:/Users/salmanul.pv/Desktop/src/Result_Mux.v,,Register_File,,,../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/Users/salmanul.pv/Desktop/src/Result_Mux.v,1775884707,verilog,,C:/Users/salmanul.pv/Desktop/src/Pipelined_Top.v,,Result_Mux,,,../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/Users/salmanul.pv/project_1_risc_v/project_1_risc_v.sim/sim_1/behav/xsim/glbl.v,1756381829,verilog,,,,glbl,,,,,,,,

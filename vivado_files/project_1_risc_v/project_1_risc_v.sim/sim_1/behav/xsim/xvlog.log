@@ -1,0 +1,47 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/salmanul.pv/Desktop/src/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/salmanul.pv/Desktop/src/ALU_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/salmanul.pv/Desktop/src/ALU_Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/salmanul.pv/Desktop/src/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/salmanul.pv/Desktop/src/EX_MEM_Pipeline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM_Pipeline
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/salmanul.pv/Desktop/src/Extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/salmanul.pv/Desktop/src/Forwarding_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forwarding_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/salmanul.pv/Desktop/src/Hazard_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Hazard_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/salmanul.pv/Desktop/src/ID_EX_Pipeline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX_Pipeline
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/salmanul.pv/Desktop/src/IF_ID_Pipeline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID_Pipeline
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/salmanul.pv/Desktop/src/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/salmanul.pv/Desktop/src/MEM_WB_Pipeline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB_Pipeline
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/salmanul.pv/Desktop/src/Main_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/salmanul.pv/Desktop/src/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/salmanul.pv/Desktop/src/PC_Plus_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_Plus_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipelined_Core
+WARNING: [VRFC 10-2938] 'PCNext' is already implicitly declared on line 23 [C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v:37]
+WARNING: [VRFC 10-2938] 'RdE' is already implicitly declared on line 115 [C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v:126]
+WARNING: [VRFC 10-2938] 'MemReadE' is already implicitly declared on line 116 [C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v:128]
+WARNING: [VRFC 10-2938] 'RdW' is already implicitly declared on line 73 [C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v:180]
+WARNING: [VRFC 10-2938] 'RegWriteW' is already implicitly declared on line 70 [C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v:181]
+WARNING: [VRFC 10-3380] identifier 'ALUResult_M' is used before its declaration [C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v:195]
+WARNING: [VRFC 10-3380] identifier 'ALUResult_M' is used before its declaration [C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v:197]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/salmanul.pv/Desktop/src/Register_File.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/salmanul.pv/Desktop/src/Result_Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Result_Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/salmanul.pv/Desktop/src/Pipelined_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipelined_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/salmanul.pv/project_1_risc_v/project_1_risc_v.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

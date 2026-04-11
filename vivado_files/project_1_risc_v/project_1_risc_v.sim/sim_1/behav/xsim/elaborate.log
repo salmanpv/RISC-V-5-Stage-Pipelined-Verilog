@@ -1,0 +1,32 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Pipelined_Top_behav xil_defaultlib.Pipelined_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PC_Plus_4
+Compiling module xil_defaultlib.IF_ID_Pipeline
+Compiling module xil_defaultlib.Register_File
+Compiling module xil_defaultlib.Extend
+Compiling module xil_defaultlib.Main_Decoder
+Compiling module xil_defaultlib.ALU_Decoder
+Compiling module xil_defaultlib.Hazard_Unit
+Compiling module xil_defaultlib.ID_EX_Pipeline
+Compiling module xil_defaultlib.Forwarding_Unit
+Compiling module xil_defaultlib.ALU_Mux
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EX_MEM_Pipeline
+Compiling module xil_defaultlib.MEM_WB_Pipeline
+Compiling module xil_defaultlib.Result_Mux
+Compiling module xil_defaultlib.Pipelined_Core
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.Pipelined_Top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Pipelined_Top_behav

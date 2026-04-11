@@ -1,0 +1,412 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sat Apr 11 16:05:27 2026
+# Process ID         : 23248
+# Current directory  : C:/Users/salmanul.pv/project_1_risc_v/project_1_risc_v.runs/synth_1
+# Command line       : vivado.exe -log Pipelined_Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Pipelined_Top.tcl
+# Log file           : C:/Users/salmanul.pv/project_1_risc_v/project_1_risc_v.runs/synth_1/Pipelined_Top.vds
+# Journal file       : C:/Users/salmanul.pv/project_1_risc_v/project_1_risc_v.runs/synth_1\vivado.jou
+# Running On         : AIPL000325
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) 5 210H
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16699 MB
+# Swap memory        : 1073 MB
+# Total Virtual      : 17773 MB
+# Available Virtual  : 3443 MB
+#-----------------------------------------------------------
+source Pipelined_Top.tcl -notrace
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 528.750 ; gain = 220.016
+Command: synth_design -top Pipelined_Top -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18420
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1070.375 ; gain = 537.676
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'PCNext', assumed default net type 'wire' [C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v:23]
+WARNING: [Synth 8-8895] 'PCNext' is already implicitly declared on line 23 [C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v:37]
+INFO: [Synth 8-11241] undeclared symbol 'RegWriteW', assumed default net type 'wire' [C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v:70]
+INFO: [Synth 8-11241] undeclared symbol 'RdW', assumed default net type 'wire' [C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v:73]
+INFO: [Synth 8-11241] undeclared symbol 'RdE', assumed default net type 'wire' [C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v:115]
+INFO: [Synth 8-11241] undeclared symbol 'MemReadE', assumed default net type 'wire' [C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v:116]
+WARNING: [Synth 8-8895] 'RdE' is already implicitly declared on line 115 [C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v:126]
+WARNING: [Synth 8-8895] 'MemReadE' is already implicitly declared on line 116 [C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v:128]
+WARNING: [Synth 8-8895] 'RdW' is already implicitly declared on line 73 [C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v:180]
+WARNING: [Synth 8-8895] 'RegWriteW' is already implicitly declared on line 70 [C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v:181]
+WARNING: [Synth 8-6901] identifier 'ALUResult_M' is used before its declaration [C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v:195]
+WARNING: [Synth 8-6901] identifier 'ALUResult_M' is used before its declaration [C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v:197]
+INFO: [Synth 8-6157] synthesizing module 'Pipelined_Top' [C:/Users/salmanul.pv/Desktop/src/Pipelined_Top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Pipelined_Core' [C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/salmanul.pv/Desktop/src/PC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (0#1) [C:/Users/salmanul.pv/Desktop/src/PC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PC_Plus_4' [C:/Users/salmanul.pv/Desktop/src/PC_Plus_4.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'PC_Plus_4' (0#1) [C:/Users/salmanul.pv/Desktop/src/PC_Plus_4.v:24]
+INFO: [Synth 8-6157] synthesizing module 'IF_ID_Pipeline' [C:/Users/salmanul.pv/Desktop/src/IF_ID_Pipeline.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IF_ID_Pipeline' (0#1) [C:/Users/salmanul.pv/Desktop/src/IF_ID_Pipeline.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Register_File' [C:/Users/salmanul.pv/Desktop/src/Register_File.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Register_File' (0#1) [C:/Users/salmanul.pv/Desktop/src/Register_File.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Extend' [C:/Users/salmanul.pv/Desktop/src/Extend.v:24]
+INFO: [Synth 8-226] default block is never used [C:/Users/salmanul.pv/Desktop/src/Extend.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'Extend' (0#1) [C:/Users/salmanul.pv/Desktop/src/Extend.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Main_Decoder' [C:/Users/salmanul.pv/Desktop/src/Main_Decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Main_Decoder' (0#1) [C:/Users/salmanul.pv/Desktop/src/Main_Decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU_Decoder' [C:/Users/salmanul.pv/Desktop/src/ALU_Decoder.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/salmanul.pv/Desktop/src/ALU_Decoder.v:15]
+INFO: [Synth 8-226] default block is never used [C:/Users/salmanul.pv/Desktop/src/ALU_Decoder.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_Decoder' (0#1) [C:/Users/salmanul.pv/Desktop/src/ALU_Decoder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Hazard_Unit' [C:/Users/salmanul.pv/Desktop/src/Hazard_Unit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Hazard_Unit' (0#1) [C:/Users/salmanul.pv/Desktop/src/Hazard_Unit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ID_EX_Pipeline' [C:/Users/salmanul.pv/Desktop/src/ID_EX_Pipeline.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ID_EX_Pipeline' (0#1) [C:/Users/salmanul.pv/Desktop/src/ID_EX_Pipeline.v:1]
+WARNING: [Synth 8-7071] port 'StallD' of module 'ID_EX_Pipeline' is unconnected for instance 'id_ex' [C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v:131]
+WARNING: [Synth 8-7023] instance 'id_ex' of module 'ID_EX_Pipeline' has 36 connections declared, but only 35 given [C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v:131]
+INFO: [Synth 8-6157] synthesizing module 'Forwarding_Unit' [C:/Users/salmanul.pv/Desktop/src/Forwarding_Unit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Forwarding_Unit' (0#1) [C:/Users/salmanul.pv/Desktop/src/Forwarding_Unit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU_Mux' [C:/Users/salmanul.pv/Desktop/src/ALU_Mux.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_Mux' (0#1) [C:/Users/salmanul.pv/Desktop/src/ALU_Mux.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/salmanul.pv/Desktop/src/ALU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/salmanul.pv/Desktop/src/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'EX_MEM_Pipeline' [C:/Users/salmanul.pv/Desktop/src/EX_MEM_Pipeline.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'EX_MEM_Pipeline' (0#1) [C:/Users/salmanul.pv/Desktop/src/EX_MEM_Pipeline.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MEM_WB_Pipeline' [C:/Users/salmanul.pv/Desktop/src/MEM_WB_Pipeline.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_WB_Pipeline' (0#1) [C:/Users/salmanul.pv/Desktop/src/MEM_WB_Pipeline.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Result_Mux' [C:/Users/salmanul.pv/Desktop/src/Result_Mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Result_Mux' (0#1) [C:/Users/salmanul.pv/Desktop/src/Result_Mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Pipelined_Core' (0#1) [C:/Users/salmanul.pv/Desktop/src/Pipelined_Core.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_Memory' [C:/Users/salmanul.pv/Desktop/src/Instruction_Memory.v:1]
+INFO: [Synth 8-3876] $readmem data file 'instructions.mem' is read successfully [C:/Users/salmanul.pv/Desktop/src/Instruction_Memory.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_Memory' (0#1) [C:/Users/salmanul.pv/Desktop/src/Instruction_Memory.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Data_Memory' [C:/Users/salmanul.pv/Desktop/src/Data_Memory.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Memory' (0#1) [C:/Users/salmanul.pv/Desktop/src/Data_Memory.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Pipelined_Top' (0#1) [C:/Users/salmanul.pv/Desktop/src/Pipelined_Top.v:1]
+WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory [C:/Users/salmanul.pv/Desktop/src/Instruction_Memory.v:8]
+WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory [C:/Users/salmanul.pv/Desktop/src/Data_Memory.v:9]
+WARNING: [Synth 8-7129] Port A[31] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[30] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[29] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[28] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[27] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[26] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[25] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[24] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[23] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[22] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[21] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[20] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[19] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[18] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[17] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[16] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[15] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[14] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[13] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[12] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[11] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[10] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[9] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[8] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[1] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[0] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[1] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[0] in module Instruction_Memory is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1192.090 ; gain = 659.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1192.090 ; gain = 659.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1192.090 ; gain = 659.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1192.090 ; gain = 659.391
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 15    
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 14    
+	   4 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 3     
+	   6 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory
+WARNING: [Synth 8-7129] Port A[31] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[30] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[29] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[28] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[27] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[26] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[25] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[24] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[23] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[22] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[21] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[20] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[19] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[18] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[17] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[16] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[15] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[14] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[13] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[12] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[11] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[10] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[9] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[8] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[1] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[0] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[31] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[30] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[29] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[28] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[27] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[26] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[25] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[24] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[23] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[22] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[21] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[20] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[19] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[18] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[17] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[16] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[15] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[14] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[13] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[12] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[11] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[10] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[9] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[8] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[7] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[1] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[0] in module Instruction_Memory is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 1499.527 ; gain = 966.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-------------------+-------------+---------------+----------------+
+|Module Name        | RTL Object  | Depth x Width | Implemented As | 
++-------------------+-------------+---------------+----------------+
+|Instruction_Memory | I_MEM_BLOCK | 32x32         | LUT            | 
++-------------------+-------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++--------------+--------------------------------+----------------+----------------------+----------------+
+|Module Name   | RTL Object                     | Inference      | Size (Depth x Width) | Primitives     | 
++--------------+--------------------------------+----------------+----------------------+----------------+
+|Pipelined_Top | core/regfile/REG_MEM_BLOCK_reg | Implied        | 32 x 32              | RAM32M x 12    | 
+|dmem          | RAM_reg                        | User Attribute | 64 x 32              | RAM64X1S x 32  | 
++--------------+--------------------------------+----------------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 1508.289 ; gain = 975.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++--------------+--------------------------------+----------------+----------------------+----------------+
+|Module Name   | RTL Object                     | Inference      | Size (Depth x Width) | Primitives     | 
++--------------+--------------------------------+----------------+----------------------+----------------+
+|Pipelined_Top | core/regfile/REG_MEM_BLOCK_reg | Implied        | 32 x 32              | RAM32M x 12    | 
+|dmem          | RAM_reg                        | User Attribute | 64 x 32              | RAM64X1S x 32  | 
++--------------+--------------------------------+----------------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 1508.289 ; gain = 975.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 1626.609 ; gain = 1093.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 1626.609 ; gain = 1093.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:56 . Memory (MB): peak = 1626.609 ; gain = 1093.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:56 . Memory (MB): peak = 1626.609 ; gain = 1093.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:56 . Memory (MB): peak = 1626.609 ; gain = 1093.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:56 . Memory (MB): peak = 1626.609 ; gain = 1093.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    34|
+|3     |LUT1     |     3|
+|4     |LUT2     |   157|
+|5     |LUT3     |   184|
+|6     |LUT4     |   197|
+|7     |LUT5     |   142|
+|8     |LUT6     |   377|
+|9     |RAM32M   |    10|
+|10    |RAM32X1D |     4|
+|11    |RAM64X1S |    32|
+|12    |FDCE     |   508|
+|13    |IBUF     |     2|
+|14    |OBUF     |    65|
++------+---------+------+
+
+Report Instance Areas: 
++------+-----------------+-------------------+------+
+|      |Instance         |Module             |Cells |
++------+-----------------+-------------------+------+
+|1     |top              |                   |  1716|
+|2     |  imem           |Instruction_Memory |    24|
+|3     |  dmem           |Data_Memory        |    32|
+|4     |  core           |Pipelined_Core     |  1592|
+|5     |    alu          |ALU                |    18|
+|6     |    ex_mem       |EX_MEM_Pipeline    |   108|
+|7     |    id_ex        |ID_EX_Pipeline     |  1076|
+|8     |    if_id        |IF_ID_Pipeline     |   132|
+|9     |    mem_wb       |MEM_WB_Pipeline    |   139|
+|10    |    pc_inst      |PC                 |    68|
+|11    |    pcplus4_inst |PC_Plus_4          |    36|
+|12    |    regfile      |Register_File      |    15|
++------+-----------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:56 . Memory (MB): peak = 1626.609 ; gain = 1093.910
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 93 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:00:56 . Memory (MB): peak = 1626.609 ; gain = 1093.910
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:56 . Memory (MB): peak = 1626.609 ; gain = 1093.910
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1642.730 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 80 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 14 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1750.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 46 instances were transformed.
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (inverted pins: WCLK) (RAMD32(x2)): 4 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+Synth Design complete | Checksum: da076ef6
+INFO: [Common 17-83] Releasing license: Synthesis
+59 Infos, 93 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 1750.738 ; gain = 1221.988
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1750.738 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/salmanul.pv/project_1_risc_v/project_1_risc_v.runs/synth_1/Pipelined_Top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Pipelined_Top_utilization_synth.rpt -pb Pipelined_Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 11 16:06:37 2026...
